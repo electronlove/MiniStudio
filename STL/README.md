@@ -12,6 +12,6 @@ Design and STL files to make mounts for AdaFruit 12 NeoPixel element rings
 
 ## Preparing the Mounting Holes
 
-The components have mounting holes for 3mm screws and will need to be threaded with the appropriate sized tap. 
-The ball joint can accommodate a 30 mm screw with a nyloc nut instead of individual screws.
-There should be some play in the joint to allow for movement.
+	The components have mounting holes for 3mm screws and will need to be threaded with the appropriate sized tap. 
+	The ball joint can accommodate a 30 mm screw with a nyloc nut instead of individual screws.
+	There should be some play in the joint to allow for movement.
