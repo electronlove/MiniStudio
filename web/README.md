@@ -40,7 +40,7 @@ def __init__(self, num_leds, output_pin=18, led_freq_hz=800000, dma=5,
   To autostart on boot:
 
 1. Create a configuration file for neopixels.service:
-- sudo nano /lib/systemd/system/neopixles.service
+- sudo nano /lib/systemd/system/neopixels.service
 
 2. Enter the following information into the file:
 
@@ -58,15 +58,15 @@ def __init__(self, num_leds, output_pin=18, led_freq_hz=800000, dma=5,
 3. Save and exit the editor.
 
 4. Set permissions by:
-- sudo chmod 644 /lib/systemd/system/neopixles.service
+- sudo chmod 644 /lib/systemd/system/neopixels.service
 
 5. Configure the service
 - sudo systemctl daemon-reload
-- sudo systemctl enable neopixles.service
+- sudo systemctl enable neopixels.service
 
 6. Reboot
 - sudo reboot
 
 7. Check the status of the running service
-- sudo systemctl status neopixles.service
+- sudo systemctl status neopixels.service
 
