@@ -22,10 +22,12 @@ def __init__(self, num_leds, output_pin=18, led_freq_hz=800000, dma=5,
   **TO**   
   
   def __init__(self, num_leds, output_pin=18, led_freq_hz=800000, dma=5,
-                 invert=False, brightness=255, channel=0, strip=ws.SK6812W_STRIP):
+                 invert=False, brightness=255, **channel=0, strip=ws.SK6812W_STRIP**):
         self.pixels = Adafruit_NeoPixel(num_leds, output_pin, led_freq_hz, dma,
-            invert, brightness, channel, strip)
+            invert, brightness, **channel, strip**)
         self.pixels.begin()
+
+  ALso change the relevant parts under **class NeoPixelsMock:** to include **channel** and **strip**
 
   **This is to specify the correct setting for Adafruit #2853 which uses the RGBW pixels**
   
